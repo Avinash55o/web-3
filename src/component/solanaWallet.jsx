@@ -18,7 +18,7 @@ export function SolanaWallet({mnemonic}){
         setCurrentIndex(currentIndex + 1);
         setPublicKeys([...publicKeys, keypair.publicKey]);
     }}>
-        Add wallet
+        Add sol wallet
     </button>
     {publicKeys.map(p => <div>
         {p.toBase58()}
