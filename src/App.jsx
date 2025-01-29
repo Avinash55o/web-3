@@ -1,5 +1,6 @@
 import React, { FC, useMemo } from "react";
 import { Airdrop } from "./Airdrop";
+import { Balance } from "./Balance";
 import {
   ConnectionProvider,
   WalletProvider,
@@ -21,13 +22,14 @@ function App() {
   const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
   return (
-    <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
+    <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/kfRU_4ZoxXTHocSBXkvM3W3dCLMReWlz"}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <div>
             <WalletMultiButton/>
             <WalletDisconnectButton/>
             <Airdrop></Airdrop>
+            <Balance></Balance>
             </div> 
           
         </WalletModalProvider>
