@@ -24,8 +24,20 @@ export function Airdrop() {
 
   return (
     <div>
-      <input type="number" placeholder="Amount" value={amount} onChange={(e)=>setamount(e.target.value)}/>
-      <button onClick={sendAirdrop}>Request Airdrop</button>
+      <h2 >Airdrop SOL</h2>
+      <input
+        type="number"
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
+        placeholder="Enter SOL amount"
+        
+      />
+      <button
+        onClick={sendAirdrop}
+        
+      >
+        Request Airdrop
+      </button>
     </div>
-  );
+    )
 }
