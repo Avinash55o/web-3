@@ -1,12 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: #f4f6f9;
+  background-color: #000000;
   color: #333;
   font-size: 16px;
   line-height: 1.5;
@@ -22,8 +21,6 @@ div {
   width: 100%;
   padding: 20px;
   margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -41,7 +38,7 @@ h1 {
 }
 
 /* Wallet Buttons Styling */
-div > .wallet-buttons {
+.wallet-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -49,7 +46,7 @@ div > .wallet-buttons {
 }
 
 /* Features Section Styling */
-div > .features {
+ .features {
   display: grid;
   gap: 20px;
   width: 100%;
@@ -66,6 +63,7 @@ div > .features {
 
 /* Button Styles */
 button {
+  margin-top: 2px;
   padding: 10px 20px;
   background-color: #0078d4;
   color: #ffffff;

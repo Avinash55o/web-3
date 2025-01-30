@@ -28,7 +28,7 @@ export function Airdrop() {
       <input
         type="number"
         value={amount}
-        onChange={(e) => setAmount(e.target.value)}
+        onChange={(e) => setamount(e.target.value)}
         placeholder="Enter SOL amount"
         
       />
